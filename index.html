@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="./one.css">
+    </head>
+    <body>
+        <h2>Digital Clock</h2>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;" >
+                        <div class="card-header">
+                            <h2>Digital Clock</h2>
+                        </div>
+                        <div class="card-body">
+                            <h2 id="clock"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        setInterval(function() {
+            var date = new Date();
+            var time =date.toLocaleTimeString();
+            document.getElementById('clock').innerHTML = time;
+        }, 1000);
+    </script>
+</html>
+
+
